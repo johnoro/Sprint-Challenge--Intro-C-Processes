@@ -14,7 +14,7 @@ A terminated process whose status hasn't been collected by its parent.
 
 **3. How does a zombie process get created? How does one get destroyed?**
 
-A zombie process gets destroyed by its parent reading the child's exit status via the `wait` syscall.
+A zombie process get created by exiting, and it gets destroyed by its parent reading the child's exit status via the `wait` syscall.
 
 **4. What are some of the benefits of working in a compiled language versus a non-compiled language? More specifically, what benefits are there to be had from taking the extra time to compile our code?**
 
