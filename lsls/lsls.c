@@ -43,15 +43,15 @@ void print_dir(char *dirname, unsigned width, unsigned count) {
  * Main
  */
 int main(int argc, char **argv) {
-  char *dirname;
-
   // Parse command line
   if (argc > 2) {
     fprintf(stderr, "\nUsage: ./lsls.exe [directory], i.e.: ./lsls.exe ../examples\n");
     exit(1);
-  } else
-    dirname = argc == 2 ? argv[1] : ".";
-  
+  }
+  char *dirname = argc == 2 ? argv[1] : ".";
+
+  // Uses width of 10 for printing and uses count of 1 for printing nested directories (so, it'll only go one level deeper)
+  // print_dir(dirname, 10, 1);
   print_dir(dirname, 10, 1);
 
   return 0;
