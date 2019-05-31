@@ -4,7 +4,7 @@
 #include <dirent.h>
 #include <sys/stat.h>
 
-void print_dir(char *dirname, int width, int count) {
+void print_dir(char *dirname, unsigned width, unsigned count) {
   // Open directory
   DIR *d = opendir(dirname);
 
