@@ -1,2 +1,2 @@
 lsls: lsls.c
-	gcc -Wall -Wextra -o $@ $^
+	gcc -Wall -Wextra -o $@.exe $^
